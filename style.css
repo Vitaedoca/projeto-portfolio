@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #0C151D;
+    font-family: 'Poppins', sans-serif;
+}
+.main-principal{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 150px;
+    gap: 108px;
+}
+.section-1{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 84.5px 85.5px;
+    column-gap: 40px;
+    
+}
+.h1{
+    font-weight: 500;
+    font-size: 46px;
+    line-height: 69px;
+    color: #FFFFFF;
+}
+.dev-front{
+    font-weight: 500;
+    font-size: 22px;
+    line-height: 33px;
+    color: #A3ABB2
+}
+.section-text{
+    display: flex;
+    flex-direction: column;
+
+}
+.div-icons1{
+   display: flex;
+   flex-direction: row;
+   margin-top: 25px;
+   gap: 26px;
+}
+.section-2{
+    width: 30%;
+    padding: 0 20px 0 0;
+}
+
+.h2-section-2{
+    font-weight: 500;
+    font-size: 46px;
+    line-height: 69px;
+    color: #71E5FF;
+
+}
+.p-section-2{
+    font-weight: 500;
+    font-size: 22px;
+    line-height: 33px;
+    color: #A3ABB2;
+    
+    align-items: center;
+    justify-content: center;
+}
+.class-button{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 38px;
+    margin-top: 40px;
+}
+.button1-section-2{
+    padding: 22px 44px;
+    font-weight: 500;
+    font-size: 22px;
+    line-height: 33px;
+    color: #3D3D3D;
+    border-radius: 15px;
+    display: inline-block;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    background-color: #71E5FF;
+    border: none;
+}
+.button2-section-2{
+    padding: 22px 94px;
+    font-weight: 500;
+    font-size: 22px;
+    line-height: 33px;
+    color: #A3ABB2;
+    border-radius: 15px;
+    background-color: #171F26;
+    border: none;
+}
