@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=VT323&display=swap');
 *{
     margin: 0;
     padding: 0;
@@ -6,7 +6,7 @@
 }
 body{
     background-color: #0C151D;
-    font-family: 'Poppins', sans-serif;
+    font-family: 'VT323', monospace;
 }
 .main-principal{
     display: flex;
@@ -25,15 +25,15 @@ body{
     
 }
 .h1{
-    font-weight: 500;
-    font-size: 46px;
-    line-height: 69px;
+    font-weight: 400;
+    font-size: 55px;
+    line-height: 55px;
     color: #FFFFFF;
 }
 .dev-front{
-    font-weight: 500;
-    font-size: 22px;
-    line-height: 33px;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 32px;
     color: #A3ABB2
 }
 .section-text{
@@ -53,49 +53,164 @@ body{
 }
 
 .h2-section-2{
-    font-weight: 500;
-    font-size: 46px;
-    line-height: 69px;
+    font-weight: 400;
+    font-size: 55px;
+    line-height: 55px;
     color: #71E5FF;
 
 }
 .p-section-2{
-    font-weight: 500;
-    font-size: 22px;
-    line-height: 33px;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 32px;
     color: #A3ABB2;
-    
     align-items: center;
     justify-content: center;
 }
+
+/*==class button==*/
 .class-button{
     display: flex;
     flex-direction: row;
     align-items: center;
+    justify-content: center;
     gap: 38px;
-    margin-top: 40px;
 }
 .button1-section-2{
-    padding: 22px 44px;
-    font-weight: 500;
-    font-size: 22px;
-    line-height: 33px;
-    color: #3D3D3D;
-    border-radius: 15px;
-    display: inline-block;
-    display: flex;
-    align-items: center;
-    gap: 15px;
-    background-color: #71E5FF;
-    border: none;
-}
+        display: flex;
+        align-items: center;
+        font-weight: 400;
+        font-size: 32px;
+        line-height: 32px;
+        padding: 24px 42px;
+        border: none;
+        border-radius: 12px;
+        background-color: #71E5FF;
+        color: #3D3D3D;
+    }
 .button2-section-2{
-    padding: 22px 94px;
-    font-weight: 500;
-    font-size: 22px;
-    line-height: 33px;
-    color: #A3ABB2;
-    border-radius: 15px;
-    background-color: #171F26;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 32px;
+    padding: 24px 102px;
     border: none;
+    border-radius: 12px;
+    background-color: #171F26;
+    color: #A3ABB2;
+}
+
+@media screen and (max-width: 1250px){
+    .h1{
+        font-weight: 400;
+        font-size: 45px;
+        line-height: 45px;
+        color: #FFFFFF;
+    }
+    .dev-front{
+        font-weight: 400;
+        font-size: 22px;
+        line-height: 22px;
+        color: #A3ABB2
+    }
+    .h2-section-2{
+        font-weight: 400;
+        font-size: 45px;
+        line-height: 45px;
+        color: #71E5FF;
+    
+    }
+    .p-section-2{
+        font-weight: 400;
+        font-size: 22px;
+        line-height: 22px;
+        color: #A3ABB2;
+        align-items: center;
+        justify-content: center;
+        margin-top: 12px;
+    }
+    .class-button{
+        margin-top: 30px;
+    }
+}
+@media screen and (max-width: 1024px){
+    .main-principal {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 150px;
+        gap: 40px;
+    }
+    .section-1 {
+        flex-direction: column;
+        align-items: center;
+        padding: 0;
+        gap: 40px;
+    }
+    .section-text {
+        align-items: center;
+    }
+    .div-icons1 {
+        margin-top: 16px;
+        gap: 26px;
+    }
+    .section-2 {
+        width: 76%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 0;
+    }
+    .button1-section-2 {
+        font-weight: 400;
+        font-size: 22px;
+        line-height: 22px;
+        padding: 13px 29px;
+        border: none;
+        border-radius: 12px;
+        background-color: #71E5FF;
+        color: #3D3D3D;
+    }
+    .button2-section-2 {
+        font-weight: 400;
+        font-size: 22px;
+        line-height: 22px;
+        padding: 16px 74.5px;
+        border: none;
+        border-radius: 12px;
+        background-color: #171F26;
+        color: #A3ABB2;
+    }
+    
+}
+@media screen and (max-width: 525px){
+    .img-foto-vini{
+        width: 124px;
+    }
+    .button1-section-2 {
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 18px;
+        padding: 13px 25px;
+        border: none;
+        border-radius: 12px;
+        background-color: #71E5FF;
+        color: #3D3D3D;
+    }
+    .img-icon1{
+        width: 27px;
+    }
+    .icon-download{
+        width: 15px;
+    }
+    .button2-section-2 {
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 18px;
+        padding: 16px 54.5px;
+        border: none;
+        border-radius: 12px;
+        background-color: #171F26;
+        color: #A3ABB2;
+    }
 }
