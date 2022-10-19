@@ -20,7 +20,7 @@ body{
     display: flex;
     flex-direction: row;
     align-items: center;
-    padding: 84.5px 85.5px;
+   
     column-gap: 40px;
     
 }
@@ -29,7 +29,32 @@ body{
     font-size: 55px;
     line-height: 55px;
     color: #FFFFFF;
+    border-right: 2px solid rgb(255, 255, 255, 0.75);
+    white-space: nowrap;
+    overflow: hidden;
 }
+.typing-animation{
+    animation: blinkCursor 500ms steps(40) infinite normal, typing 3s steps(40) 1s normal both;
+}
+
+@keyframes blinkCursor{
+    from{
+        border-right-color: rgba(255, 255, 255, 0.75);
+    }
+    to{
+        border-right-color: transparent;
+    }
+}
+@keyframes typing{
+    from{
+        width: 0;
+    }
+    to{
+        width: 100%;
+    }
+}
+    
+
 .dev-front{
     font-weight: 400;
     font-size: 32px;
@@ -57,7 +82,29 @@ body{
     font-size: 55px;
     line-height: 55px;
     color: #71E5FF;
-
+    border-right: 2px solid rgba(113, 229, 255, 0.75);
+    white-space: nowrap;
+    overflow: hidden;
+    display: inline-block;
+}
+.typing-animation2{
+    animation: blinkCursor2 500ms steps(40) infinite normal, typing2 4s steps(40) 4s normal both;
+}
+@keyframes blinkCursor2{
+    from{
+        border-right-color: rgba(113, 229, 255, 0.75);
+    }
+    to{
+        border-right-color: transparent;
+    }
+}
+@keyframes typing2{
+    from{
+        width: 0;
+    }
+    to{
+        width: 100%;
+    }
 }
 .p-section-2{
     font-weight: 400;
@@ -132,13 +179,27 @@ body{
         margin-top: 30px;
     }
 }
-@media screen and (max-width: 1024px){
+@media screen and (max-width: 1027px){
     .main-principal {
         display: flex;
         flex-direction: column;
         align-items: center;
         margin-top: 150px;
         gap: 40px;
+    }
+    .h1{
+        font-size: 35px;
+        line-height: 35px;
+     
+    }
+    .p-section-2{
+        font-size: 18px;
+        line-height: 18px;
+
+    }
+    .h2-section-2{
+        font-size: 35px;
+        line-height: 35px;
     }
     .section-1 {
         flex-direction: column;
@@ -191,7 +252,7 @@ body{
         font-weight: 400;
         font-size: 12px;
         line-height: 18px;
-        padding: 13px 25px;
+        padding: 16px 31px;
         border: none;
         border-radius: 12px;
         background-color: #71E5FF;
